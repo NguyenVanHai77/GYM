@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
@@ -15,14 +14,15 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#ECEFFE, #C5CFFC);
+  background: linear-gradient(#0F0F0F, #1C1C1C);
+  color: #FFFFFF;
 }
 
 .card-wrapper {
   max-width: 1100px;
   margin: 0 60px 35px;
   padding: 20px 10px;
-  overflow: visible; /* Cho phép nội dung dưới ảnh không bị cắt */
+  overflow: visible;
 }
 
 .card-list .card-item {
@@ -31,20 +31,21 @@ body {
 
 .card-list .card-item .card-link {
   display: flex;
-  flex-direction: column; /* Đặt ảnh + nội dung thành cột */
+  flex-direction: column;
   align-items: center;
-  background: #fff;
+  background: #1E1E1E;
   padding: 18px;
   user-select: none;
   border-radius: 12px;
   text-decoration: none;
-  border: 2px solid transparent;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  border: 2px solid #2C2C2C;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   transition: 0.2s ease;
+  color: #FFF;
 }
 
 .card-list .card-item .card-link:hover {
-  border-color: #5372F0;
+  border-color: #FF4136;
 }
 
 .card-list .card-item .card-link:active {
@@ -53,7 +54,7 @@ body {
 
 .card-list .card-link .card-image {
   width: 100%;
-  max-height: 200px; /* Giới hạn chiều cao ảnh */
+  max-height: 200px;
   border-radius: 10px;
   object-fit: cover;
   aspect-ratio: 16 / 9;
@@ -65,36 +66,36 @@ body {
   font-size: 0.95rem;
   border-radius: 50px;
   font-weight: 500;
-  margin: 16px 0 8px; /* tạo khoảng trống dưới ảnh */
+  margin: 16px 0 8px;
 }
 
 .badge-designer {
-  color: #B22485;
-  background: #F7DFF5;
+  color: #FF4136;
+  background: #2C2C2C;
 }
 
 .badge-developer {
-  color: #5372F0;
-  background: #DDE4FF;
+  color: #FF851B;
+  background: #3A3A3A;
 }
 
 .badge-marketer {
-  color: #B25A2B;
-  background: #FFE3D2;
+  color: #7FDBFF;
+  background: #222;
 }
 
 .badge-gamer {
-  color: #205C20;
-  background: #D6F8D6;
+  color: #2ECC40;
+  background: #1F1F1F;
 }
 
 .badge-editor {
-  color: #856404;
-  background: #fff3cd;
+  color: #F012BE;
+  background: #292929;
 }
 
 .card-list .card-link .card-title {
-  color: #000;
+  color: #FFFFFF;
   font-size: 1.19rem;
   font-weight: 600;
   text-align: center;
@@ -103,26 +104,26 @@ body {
 .card-list .card-link .card-button {
   height: 35px;
   width: 35px;
-  color: #5372F0;
+  color: #FF4136;
   margin: 12px 0 5px;
   background: none;
   cursor: pointer;
   border-radius: 50%;
-  border: 2px solid #5372F0;
+  border: 2px solid #FF4136;
   transform: rotate(-45deg);
   transition: 0.4s ease;
 }
 
 .card-list .card-link:hover .card-button {
   color: #fff;
-  background: #5372F0;
+  background: #FF4136;
 }
 
 .card-wrapper .swiper-pagination-bullet {
   height: 13px;
   width: 13px;
   opacity: 0.5;
-  background: #5372F0;
+  background: #FF4136;
 }
 
 .card-wrapper .swiper-pagination-bullet-active {
@@ -130,7 +131,7 @@ body {
 }
 
 .card-wrapper .swiper-slide-button {
-  color: #5372F0;
+  color: #FF4136;
   margin-top: -35px;
 }
 
@@ -143,9 +144,9 @@ body {
   }
 }
 
-/* Phần profile card riêng */
+/* Profile card - Gym Style */
 .main {
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  background: linear-gradient(135deg, #1C1C1C 0%, #111 100%);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -157,9 +158,9 @@ body {
 }
 
 .profile-card {
-  background-color: #fff8f0;
-  border: 1px solid #f0e6dd;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background-color: #1A1A1A;
+  border: 1px solid #333;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   padding: 30px;
   max-width: 400px;
@@ -167,6 +168,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #FFF;
 }
 
 .image {
@@ -183,8 +185,8 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-  background: #eee;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  background: #333;
 }
 
 .image span {
@@ -192,7 +194,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #333;
+  color: #ccc;
   font-size: 18px;
   display: none;
 }
@@ -207,27 +209,28 @@ body {
 .data h2 {
   font-size: 33px;
   font-weight: 600;
+  color: #FF4136;
 }
 
 .data span {
   font-size: 18px;
+  color: #ccc;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   margin-top: 30px;
+  gap: 20px;
 }
 
 .buttons .btn {
   color: #fff;
   text-decoration: none;
-  margin: 0 20px;
   padding: 8px 25px;
   border-radius: 25px;
   font-size: 18px;
-  white-space: nowrap;
-  background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+  background: linear-gradient(to left, #FF4136, #FF851B);
   transition: 0.3s;
 }
 
